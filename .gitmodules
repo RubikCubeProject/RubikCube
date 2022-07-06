@@ -1,0 +1,9 @@
+[submodule "RubikCube/vendor/spdlog"]
+	path = RubikCube/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "RubikCube/vendor/GLFW"]
+	path = RubikCube/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "RubikCube/vendoor/GLFW"]
+	path = RubikCube/vendoor/GLFW
+	url = https://github.com/TheCherno/glfw

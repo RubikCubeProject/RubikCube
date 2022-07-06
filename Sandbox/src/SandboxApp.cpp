@@ -1,11 +1,10 @@
 #include "RubikCube.h"
-
 class Sandbox : public RubikCube::Application
 {
 public:
 	Sandbox()
 	{
-
+		
 	}
 
 	~Sandbox()
