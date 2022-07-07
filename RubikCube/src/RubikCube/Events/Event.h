@@ -38,20 +38,22 @@ namespace RubikCube {
 
 	class RUBIKCUBE_API Event
 	{
-		friend class EventDispatcher;
 	public:
+		virtual ~Event() = default;
+
+		bool Handled = false;
+
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
 		virtual int GetCategoryFlags() const = 0;
 		virtual std::string ToString() const { return GetName(); }
 
-		inline bool IsInCategory(EventCategory category)
+		bool IsInCategory(EventCategory category)
 		{
 			return GetCategoryFlags() & category;
 		}
-	protected:
-		bool m_Handled = false;
 	};
+
 
 	class EventDispatcher
 	{
@@ -68,7 +70,7 @@ namespace RubikCube {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				if (m_Event.m_Handled = func(*(T*)&m_Event));
+				if (m_Event.Handled = func(*(T*)&m_Event));
 				return true;
 			}
 			return false;

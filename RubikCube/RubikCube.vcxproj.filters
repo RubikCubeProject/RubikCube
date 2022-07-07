@@ -37,6 +37,12 @@
     <ClInclude Include="src\RubikCube\Events\MouseEvent.h">
       <Filter>RubikCube\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\RubikCube\Layer.h">
+      <Filter>RubikCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RubikCube\LayerStack.h">
+      <Filter>RubikCube</Filter>
+    </ClInclude>
     <ClInclude Include="src\RubikCube\Log.h">
       <Filter>RubikCube</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
       <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\RubikCube\Application.cpp">
+      <Filter>RubikCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RubikCube\Layer.cpp">
+      <Filter>RubikCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RubikCube\LayerStack.cpp">
       <Filter>RubikCube</Filter>
     </ClCompile>
     <ClCompile Include="src\RubikCube\Log.cpp">
