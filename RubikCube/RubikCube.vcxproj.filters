@@ -4,16 +4,28 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="RubikCube">
       <UniqueIdentifier>{C1ED7EB0-2D58-3327-7696-E4CCE23F117C}</UniqueIdentifier>
     </Filter>
     <Filter Include="RubikCube\Events">
       <UniqueIdentifier>{8576E951-716F-08A4-9AA1-ED2886F9E7AF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RubikCube\ImGui">
+      <UniqueIdentifier>{ABEFECBC-177B-5A81-208C-DD758C96B681}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Platform\WindowsWindow.h">
-      <Filter>Platform</Filter>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\RubikCube.h" />
     <ClInclude Include="src\RubikCube\Application.h">
@@ -37,6 +49,9 @@
     <ClInclude Include="src\RubikCube\Events\MouseEvent.h">
       <Filter>RubikCube\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\RubikCube\ImGui\ImGuiLayer.h">
+      <Filter>RubikCube\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\RubikCube\Layer.h">
       <Filter>RubikCube</Filter>
     </ClInclude>
@@ -52,11 +67,17 @@
     <ClInclude Include="src\rcpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Platform\WindowsWindow.cpp">
-      <Filter>Platform</Filter>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\RubikCube\Application.cpp">
       <Filter>RubikCube</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RubikCube\ImGui\ImGuiLayer.cpp">
+      <Filter>RubikCube\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\RubikCube\Layer.cpp">
       <Filter>RubikCube</Filter>
