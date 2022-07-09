@@ -7,3 +7,6 @@
 [submodule "RubikCube/vendoor/GLFW"]
 	path = RubikCube/vendoor/GLFW
 	url = https://github.com/TheCherno/glfw
+[submodule "RubikCube/vendor/imgui"]
+	path = RubikCube/vendor/imgui
+	url = https://github.com/TheCherno/imgui
