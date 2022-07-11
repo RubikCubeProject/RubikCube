@@ -10,6 +10,10 @@
     #error RubikCube only supports Windows!
 #endif
 
+#ifdef RC_DEBUG
+    #define RC_ENABLE_ASSERTS
+#endif 
+
 #ifdef RC_ENABLE_ASSERTS
     #define RC_ASSERT(x, ...) { if(!(x)) { RC_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }}
     #define RC_CORE_ASSERT(x, ...) { if(!(x)) { RC_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); }}
