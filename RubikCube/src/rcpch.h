@@ -12,6 +12,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
+
 #include "RubikCube/Log.h"
 
 #ifdef  RC_PLATFORM_WINDOWS

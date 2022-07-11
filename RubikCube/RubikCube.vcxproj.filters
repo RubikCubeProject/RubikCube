@@ -24,6 +24,9 @@
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
       <Filter>Platform\OpenGL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -52,6 +55,12 @@
     <ClInclude Include="src\RubikCube\ImGui\ImGuiLayer.h">
       <Filter>RubikCube\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\RubikCube\Input.h">
+      <Filter>RubikCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RubikCube\KeyCodes.h">
+      <Filter>RubikCube</Filter>
+    </ClInclude>
     <ClInclude Include="src\RubikCube\Layer.h">
       <Filter>RubikCube</Filter>
     </ClInclude>
@@ -59,6 +68,9 @@
       <Filter>RubikCube</Filter>
     </ClInclude>
     <ClInclude Include="src\RubikCube\Log.h">
+      <Filter>RubikCube</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RubikCube\MouseButtonCodes.h">
       <Filter>RubikCube</Filter>
     </ClInclude>
     <ClInclude Include="src\RubikCube\Window.h">
@@ -69,6 +81,9 @@
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
       <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>

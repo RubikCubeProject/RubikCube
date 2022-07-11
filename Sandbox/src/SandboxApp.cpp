@@ -11,11 +11,20 @@ public:
 	void OnUpdate() override
 	{
 		RC_INFO("ExampleLayer::Update");
+
+		if(RubikCube::Input::IsKeyPressed(RC_KEY_TAB))
+		RC_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(RubikCube::Event& event) override
 	{
-		RC_TRACE("{0}", event);
+		if (event.GetEventType() == RubikCube::EventType::KeyPressed)
+		{
+			RubikCube::KeyPressedEvent& e = (RubikCube::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == RC_KEY_TAB)
+				RC_TRACE("Tab key is pressed (event)!");
+			RC_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 
 };

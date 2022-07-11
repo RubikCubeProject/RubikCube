@@ -24,7 +24,7 @@ namespace RubikCube {
 	void ImGuiLayer::OnAttach()
 	{
 		ImGui::CreateContext();
-		ImGui::StyleColorsDark();
+		ImGui::StyleColorsLight();
 
 		ImGuiIO& io = ImGui::GetIO();
 		io.BackendFlags |= ImGuiBackendFlags_HasMouseCursors;
@@ -51,11 +51,12 @@ namespace RubikCube {
 		io.KeyMap[ImGuiKey_Z] = GLFW_KEY_Z;
 
 		ImGui_ImplOpenGL3_Init("#version 410");
+
 	}
 
 	void ImGuiLayer::OnDetach()
 	{
-
+		
 	}
 
 	void ImGuiLayer::OnUpdate()
@@ -156,4 +157,5 @@ namespace RubikCube {
 
 		return false;
 	}
+
 }

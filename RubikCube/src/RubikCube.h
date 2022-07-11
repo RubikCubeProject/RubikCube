@@ -6,6 +6,10 @@
 #include "RubikCube/Layer.h"
 #include "RubikCube/Log.h"
 
+#include "RubikCube/Input.h"
+#include "RubikCube/KeyCodes.h"
+#include "RubikCube/MouseButtonCodes.h"
+
 #include "RubikCube/ImGui/ImGuiLayer.h"
 
 // ---Entry Point-------------------------
