@@ -10,3 +10,6 @@
 [submodule "RubikCube/vendor/imgui"]
 	path = RubikCube/vendor/imgui
 	url = https://github.com/TheCherno/imgui
+[submodule "RubikCube/vendor/glm"]
+	path = RubikCube/vendor/glm
+	url = https://github.com/g-truc/glm
