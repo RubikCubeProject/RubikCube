@@ -15,6 +15,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "RubikCube/vendor/GLFW/include"
 IncludeDir["Glad"] = "RubikCube/vendor/Glad/include"
 IncludeDir["ImGui"] = "RubikCube/vendor/imgui"
+IncludeDir["glm"] = "RubikCube/vendor/glm"
 
 include "RubikCube/vendor/GLFW"
 include "RubikCube/vendor/Glad"
@@ -35,7 +36,9 @@ project "RubikCube"
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/glm/glm/**.hpp",
+        "%{prj.name}/vendor/glm/glm/**.inl",
     }
 
     includedirs
@@ -44,7 +47,8 @@ project "RubikCube"
         "%{prj.name}/src",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.glm}"
     }
 
     links
@@ -91,6 +95,7 @@ project "Sandbox"
     location "Sandbox"
     kind "ConsoleApp"
     language "C++"
+    staticruntime "off"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -104,7 +109,8 @@ project "Sandbox"
     includedirs
     {
         "RubikCube/vendor/spdlog/include",
-        "RubikCube/src"
+        "RubikCube/src",
+        "%{IncludeDir.glm}"
     }
 
     filter "system:windows"
