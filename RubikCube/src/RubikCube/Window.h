@@ -14,8 +14,8 @@ namespace RubikCube {
 		unsigned int Height;
 
 		WindowProps(const std::string& title = "RubikCube Engine",
-			unsigned int width = 1010,
-			unsigned int height = 650)
+			unsigned int width = 800,
+			unsigned int height = 600)
 			: Title(title), Width(width), Height(height)
 		{
 		}

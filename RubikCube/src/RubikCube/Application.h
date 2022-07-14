@@ -7,6 +7,8 @@
 #include "Window.h"
 #include "Events/ApplicationEvent.h"
 
+#include "RubikCube/ImGui/ImGuiLayer.h"
+
 namespace RubikCube {
 
 	class  RUBIKCUBE_API Application
@@ -28,6 +30,7 @@ namespace RubikCube {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

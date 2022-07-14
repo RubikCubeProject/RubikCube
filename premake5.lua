@@ -110,6 +110,7 @@ project "Sandbox"
     {
         "RubikCube/vendor/spdlog/include",
         "RubikCube/src",
+        "RubikCube/vendor",
         "%{IncludeDir.glm}"
     }
 

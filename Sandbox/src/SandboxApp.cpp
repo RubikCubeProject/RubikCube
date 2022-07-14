@@ -1,5 +1,7 @@
 #include "RubikCube.h"
 
+#include "imgui/imgui.h"
+
 class ExampleLayer : public RubikCube::Layer
 {
 public:
@@ -14,6 +16,13 @@ public:
 
 		if(RubikCube::Input::IsKeyPressed(RC_KEY_TAB))
 		RC_TRACE("Tab key is pressed (poll)!");
+	}
+
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
 	}
 
 	void OnEvent(RubikCube::Event& event) override
@@ -34,7 +43,6 @@ public:
 	Sandbox()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new RubikCube::ImGuiLayer());
 	}
 
 	~Sandbox()
