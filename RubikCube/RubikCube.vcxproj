@@ -92,6 +92,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Debug-windows-x86_64\RubikCube\RubikCube.lib</ImportLibrary>
+      <ModuleDefinitionFile>RubikCube.def</ModuleDefinitionFile>
     </Link>
     <PostBuildEvent>
       <Command>IF EXIST ..\bin\Debug-windows-x86_64\RubikCube\RubikCube.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\RubikCube\RubikCube.dll "..\bin\Debug-windows-x86_64\Sandbox\" &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\RubikCube\RubikCube.dll "..\bin\Debug-windows-x86_64\Sandbox\" &gt; nul)</Command>
