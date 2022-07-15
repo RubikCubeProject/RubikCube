@@ -13,3 +13,9 @@
 [submodule "RubikCube/vendor/glm"]
 	path = RubikCube/vendor/glm
 	url = https://github.com/g-truc/glm
+[submodule "RubikCube/RubikCube/vendor/spdlog"]
+	path = RubikCube/RubikCube/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "RubikCube/RubikCube/vendor/GLFW"]
+	path = RubikCube/RubikCube/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

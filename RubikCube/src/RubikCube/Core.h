@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef RC_PLATFORM_WINDOWS
+#if RC_DYNAMIC_LINK
     #ifdef RC_BUILD_DLL
         #define RUBIKCUBE_API __declspec(dllexport)
     #else
         #define RUBIKCUBE_API __declspec(dllimport)
     #endif
+#else
+   #define RUBIKCUBE_API
+#endif
 #else
     #error RubikCube only supports Windows!
 #endif
