@@ -1,6 +1,7 @@
 #pragma once
 
 #include "RubikCube/Window.h"
+#include "RubikCube/Renderer/GraphicsContext.h"
 
 #include <GLFW/glfw3.h>
 
@@ -28,6 +29,7 @@ namespace RubikCube {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData 
 		{
