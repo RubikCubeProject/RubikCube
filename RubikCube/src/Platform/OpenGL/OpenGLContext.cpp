@@ -17,6 +17,11 @@ namespace RubikCube {
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		RC_CORE_ASSERT(status, "Failed to intialize Glad!")
+
+		RC_CORE_INFO("OpenGL Info:");
+		RC_CORE_INFO("  Vendor: {0}", glGetString(GL_VENDOR));
+		RC_CORE_INFO("  Renderer: {0}", glGetString(GL_RENDERER));
+		RC_CORE_INFO("  Version: {0}", glGetString(GL_VERSION));
 	}
 	void OpenGLContext::SwapBuffers()
 	{
