@@ -159,6 +159,7 @@
     <ClInclude Include="src\RubikCube\Log.h" />
     <ClInclude Include="src\RubikCube\MouseButtonCodes.h" />
     <ClInclude Include="src\RubikCube\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\RubikCube\Renderer\Shader.h" />
     <ClInclude Include="src\RubikCube\Window.h" />
     <ClInclude Include="src\rcpch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -590,6 +591,7 @@
     <ClCompile Include="src\rcpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\RubikCube\Renderer\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

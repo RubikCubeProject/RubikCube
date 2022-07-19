@@ -14,3 +14,6 @@ EXPORTS
     ??1Layer@RubikCube@@UEAA@XZ
     ??0Layer@RubikCube@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
     ?Init@Log@RubikCube@@SAXXZ
+    ?ImLog@@YAMM@Z
+    ?ShowDemoWindowLayout@@YAXXZ
+    ?OnImGuiRender@ExampleLayer@@UEAAXXZ
